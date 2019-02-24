@@ -36,4 +36,10 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value = "/test1", method = RequestMethod.GET)
+	public String test1() {
+		logger.info("test1 접속 ");
+		
+		return "test1";
+	}
 }
