@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 게시판 처리 SQL -->
+<mapper namespace="global.sesoc.web6.dao.BoardMapper">
+
+	<!-- 글작성 회원 정보 가져오기-->
+	<select id="idcheck" parameterType="string" resultType="Customer">
+		select * from customer where custid = #{custid}
+	</select>
+	
+	<!-- 글 저장 -->
+	<insert id="save" parameterType="Board">
+		insert into board (boardnum, id, title, content)
+		values (board_seq.nextval, #{id}, #{title}, #{content})
+	</insert>
+	
+	<!-- 게시판 목록 출력 -->
+	<select id="read" resultType="Board">
+		select * from board
+	</select>
+	
+	<!-- 글 읽기 -->
+	<select id="content" parameterType="int" resultType="Board">
+		select * from board where boardnum = #{boardnum}
+	</select>
+</mapper>
