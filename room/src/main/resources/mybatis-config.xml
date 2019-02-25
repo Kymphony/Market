@@ -4,9 +4,16 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<!-- <typeAlias type="show.me.room.vo." alias="" /> -->
+		<typeAlias type="show.me.room.vo.MemberVO" alias="Member" />
+		<typeAlias type="show.me.room.vo.BusinessVO" alias="Business" />
+		<typeAlias type="show.me.room.vo.InviteVO" alias="Invite" />
+		<typeAlias type="show.me.room.vo.PrVO" alias="Pr" />
+		<typeAlias type="show.me.room.vo.ReplyVO" alias="Reply" />
+		<typeAlias type="show.me.room.vo.QnAVO" alias="QnA" />
 	</typeAliases>
 	<mappers>
-		<!-- <mapper resource="" /> -->
+		<mapper resource="infoMapper.xml" />
+		<mapper resource="boardMapper.xml" />
+		<mapper resource="replyMapper.xml" />
 	</mappers>
 </configuration>
