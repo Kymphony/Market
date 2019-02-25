@@ -14,14 +14,14 @@
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,700,900" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 <!-- Styles -->
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/animate.min.css">
-<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<link rel="stylesheet" href="resources/font-awesome-4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="resources/css/animate.min.css">
+<link rel="stylesheet" href="resources/css/animations.css">
 <link rel="stylesheet" href="style.css">
 <!--  Js -->
-<script src="assets/js/modernizr.custom.js"></script>
-<script src="assets/js/jquery-2.1.3.min.js"></script>
+<script src="resources/js/modernizr.custom.js"></script>
+<script src="resources/js/jquery-2.1.3.min.js"></script>
 </head>
 <body>
 <h1> 용민 성원</h1>
