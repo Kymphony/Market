@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import show.me.room.dao.InfoDAO;
+import show.me.room.vo.BusinessVO;
 import show.me.room.vo.MemberVO;
 
 @Controller
@@ -19,7 +20,7 @@ public class InfoController {
 	// 일반인 회원가입 폼으로 이동
 	@RequestMapping(value = "/join", method = RequestMethod.GET)
 	public String JoinForm() {
-
+		
 		return "info/join";
 	}
 
@@ -33,18 +34,20 @@ public class InfoController {
 	// 일반인 가입 처리
 	@RequestMapping(value = "/join", method = RequestMethod.POST)
 	public String join(MemberVO member) {
-		logger.info("전달된 param : {}", member);
-
+		logger.debug("전달된 값 : {}", member);
+		
+		dao.insertMember(member);
 		
 		return "redirect:/";
 	}
-	
-	// 기업 가입 처리
-		@RequestMapping(value = "/bjoin", method = RequestMethod.POST)
-		public String bjoin(MemberVO member) {
-			logger.info("전달된 param : {}", member);
 
-			
-			return "redirect:/";
-		}
+	// 기업 가입 처리
+	@RequestMapping(value = "/bjoin", method = RequestMethod.POST)
+	public String bjoin(BusinessVO business) {
+		logger.debug("전달된 값 : {}", business);
+		
+		dao.insertBusiness(business);
+		
+		return "redirect:/";
+	}
 }

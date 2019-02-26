@@ -4,5 +4,17 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="show.me.room.dao.InfoMapper">
+	
+	<!--일반인 가입 처리-->
+	<insert id="">
+		insert into member (id, password, name, idnum, address, phone, email, hometype, space) 
+		values (#{id}, #{password}, #{name}, #{idnum}, #{address}, #{phone}, #{email}, #{hometype}, #{space})
+	</insert>
 
+	<!--기업 가입 처리-->
+	<insert id="">
+		insert into business (bname, bpassword, bnum, baddress, homepage, bphone, bemail, special, rate) 
+		values (#{bname}, #{bpassword}, #{bnum}, #{baddress}, #{homepage}, #{bphone}, #{bemail}, #{special}, #{rate})
+	</insert>
+	
 </mapper>
