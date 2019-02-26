@@ -11,4 +11,10 @@ public interface InfoMapper {
 	// 기업 가입 처리
 	public int insertBusiness(BusinessVO business);
 
+	// 일반인 로그인 위해서 검색
+	public MemberVO getMember(String id);
+
+	// 기업 로그인 위해서 검색
+	public BusinessVO getBusiness(String bname);
+
 }

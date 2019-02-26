@@ -38,4 +38,27 @@ public class InfoDAO {
 		return result;
 	}
 
+	// 일반인 로그인 위해서 검색
+	public MemberVO getMember(String id) {
+		MemberVO member = null;
+		InfoMapper mapper = sqlSession.getMapper(InfoMapper.class);
+		try {
+			member = mapper.getMember(id);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return member;
+	}
+
+	// 기업 로그인 위해서 검색
+	public BusinessVO getBusiness(String bname) {
+		BusinessVO business = null;
+		InfoMapper mapper = sqlSession.getMapper(InfoMapper.class);
+		try {
+			business = mapper.getBusiness(bname);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return business;
+	}
 }

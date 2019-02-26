@@ -6,15 +6,59 @@
 <mapper namespace="show.me.room.dao.InfoMapper">
 	
 	<!--일반인 가입 처리-->
-	<insert id="">
-		insert into member (id, password, name, idnum, address, phone, email, hometype, space) 
-		values (#{id}, #{password}, #{name}, #{idnum}, #{address}, #{phone}, #{email}, #{hometype}, #{space})
+	<insert id="insertMember" parameterType="Member">
+		insert into member 
+		(id
+		, password
+		, name
+		, idnum
+		, address
+		, phone
+		, email
+		, hometype
+		, space) 
+		values 
+		(#{id}
+		, #{password}
+		, #{name}
+		, #{idnum}
+		, #{address}
+		, #{phone}
+		, #{email}
+		, #{hometype}
+		, #{space})
 	</insert>
 
 	<!--기업 가입 처리-->
-	<insert id="">
-		insert into business (bname, bpassword, bnum, baddress, homepage, bphone, bemail, special, rate) 
-		values (#{bname}, #{bpassword}, #{bnum}, #{baddress}, #{homepage}, #{bphone}, #{bemail}, #{special}, #{rate})
+	<insert id="insertBusiness" parameterType="Business">
+		insert into business 
+		(bname
+		, bpassword
+		, bnum
+		, baddress
+		, homepage
+		, bphone
+		, bemail
+		, special) 
+		values 
+		(#{bname}
+		, #{bpassword}
+		, #{bnum}
+		, #{baddress}
+		, #{homepage}
+		, #{bphone}
+		, #{bemail}
+		, #{special})
 	</insert>
+	
+	<!--일반인 로그인 위해서 검색-->
+	<select id="getMember" parameterType="Member" resultType="Member">
+		select * from member where id = #{id} and password = #{password}
+	</select>
+	
+	<!--기업 로그인 위해서 검색-->
+	<select id="getBusiness" parameterType="Business" resultType="Business">
+		select * from business where bname = #{bname} and bpassword = #{bpassword}	
+	</select>
 	
 </mapper>
