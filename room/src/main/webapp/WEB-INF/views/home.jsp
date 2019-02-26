@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<title>Pension - HTML Template by WowThemes.net</title>
+<title>쇼미더룸</title>
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,700,900" rel="stylesheet" type="text/css">
@@ -28,13 +28,13 @@
 <nav>
 <!-- 로그인, 로그아웃 위치 -->
 <div class="logging-box">
-
-<p>로그인</p>
-
+	<a href="login" class="logo logo-img">
+	<img src="resources/img/logbutton.png" alt="logo">	
+	</a>
 </div>
 <!-- logo -->
 <div class="logo-box">
-	<a href="index.html" class="logo logo-img">
+	<a href="/room" class="logo logo-img">
 	<img src="resources/img/logo.png" alt="logo">
 	</a>
 </div>
@@ -80,7 +80,7 @@
 	<li><a href="#" target="_blank"><i class="fa fa-yelp"></i></a></li>
 </ul>
 <div class="copyright">
-	 &copy; 2016 <a href="index.html">Pension</a>.
+	 &copy; 2019 <a href="index.html">쇼미더룸</a>
 </div>
 </footer>
 </nav>

@@ -7,15 +7,15 @@ div .logging-box {
 }
 div .logging-box .logo {
 	position:relative;
-	max-height:50px;
-	padding:10px;
+	max-height:14px;
+	padding:5px;
 	display:block;
 }
-div .logo-box .logo img {
-	height:auto;
-}
-div .logo-box .logo.logo-v2 {
-	background:#C39254;
+/*==================================================================
+							    QnA테이블
+====================================================================*/
+div.qna{
+	vertical-align: middle;
 }
 
 /* =================================================================== */
@@ -1268,6 +1268,30 @@ header.page-header h2:after {
 	margin-left:-15px;
 	content:"";
 }
+
+
+/*테이블 설정*/
+/*헤더*/
+.table-header{
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.table-header:after {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:50%;
+	background-color:transparent;
+	background-color:rgba(0,0,0,.2);
+	content:"";
+	z-index:1;
+}
+/*테이블 끝*/
+
+
 .full-image-background {
 	background-size:cover;
 	background-position:center;

@@ -1,3 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko" class="no-js">
 <head>
@@ -12,22 +15,22 @@
 <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <!-- Styles -->
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<link rel="stylesheet" href="resources/font-awesome-4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/animate.min.css">
-<link rel="stylesheet" href="assets/css/animations.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="resources/css/animate.min.css">
+<link rel="stylesheet" href="resources/css/animations.css">
+<link rel="stylesheet" href="resources/style.css">
 <!--  Js -->
-<script src="assets/js/modernizr.custom.js"></script>
-<script src="assets/js/jquery-2.1.3.min.js"></script>
+<script src="resources/js/modernizr.custom.js"></script>
+<script src="resources/js/jquery-2.1.3.min.js"></script>
 </head>
 <body>
 <!-- NAVIGATION -->
 <nav>
 <!-- logo -->
 <div class="logo-box">
-	<a href="index.html" class="logo logo-img">
+	<a href="/room" class="logo logo-img">
 	<img src="resources/img/logo.png" alt="logo">
 	</a>
 </div>
@@ -39,27 +42,10 @@
 <div class="menu-box my-scrollbar">
 	<div id="dl-menu" class="dl-menuwrapper">
 		<ul class="dl-menu dl-menuopen">
-			<li><a href="index.html">home</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="rooms.html">rooms</a></li>
-			<li><a href="events.html">events</a></li>
-			<li><a href="blog.html">blog</a></li>
-			<li><a href="contact.html">contact</a></li>
-			<li class="submenu"><a href="#">pages</a>
-			<ul class="sub-menu">
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="testimonials.html">Testimonials</a></li>
-				<li><a href="rooms-single.html">Room Single</a></li>
-				<li><a href="events-single.html">Event Single</a></li>
-				<li><a href="blog-single.html">Blog Single</a></li>
-				<li class="submenu "><a href="#">Interface</a>
-				<ul class="sub-menu">
-					<li><a href="elements.html">elements</a></li>
-					<li><a href="columns.html">columns</a></li>
-				</ul>
-				</li>
-			</ul>
-			</li>
+			<li><a href="./">홈페이지</a></li>
+			<li><a href="invite">집들이</a></li>
+			<li><a href="pr">전문가</a></li>
+			<li><a href="qna">질문과 답변</a></li>
 		</ul>
 	</div>
 </div>
@@ -72,7 +58,7 @@
 	<li><a href="#" target="_blank"><i class="fa fa-yelp"></i></a></li>
 </ul>
 <div class="copyright">
-	 &copy; 2016 <a href="index.html">Pension</a>.
+	 &copy; 2019 <a href="index.html">쇼미더룸</a>.
 </div>
 </footer>
 </nav>
@@ -83,7 +69,7 @@
 	<!-- event -->
 	<div class="row-same-height">
 		<div class="col-xs-12 col-sm-4 col-sm-height">
-			<img src="assets/img/14.jpg" alt="">
+			<img src="resources/img/14.jpg" alt="">
 		</div>
 		<div class="col-xs-12 col-sm-4 col-sm-height col-middle">
 			<div class="insidecolumn">
@@ -107,7 +93,7 @@
 	<!-- event -->
 	<div class="row-same-height">
 		<div class="col-xs-12 col-sm-4 col-sm-height">
-			<img src="assets/img/11.jpg" alt="">
+			<img src="resources/img/11.jpg" alt="">
 		</div>
 		<div class="col-xs-12 col-sm-4 col-sm-height bg-gray col-middle">
 			<div class="insidecolumn">
@@ -131,7 +117,7 @@
 	<!-- event -->
 	<div class="row-same-height">
 		<div class="col-xs-12 col-sm-4 col-sm-height">
-			<img src="assets/img/12.jpg" alt="">
+			<img src="resources/img/12.jpg" alt="">
 		</div>
 		<div class="col-xs-12 col-sm-4 col-sm-height col-middle">
 			<div class="insidecolumn">
@@ -155,7 +141,7 @@
 	<!-- event -->
 	<div class="row-same-height">
 		<div class="col-xs-12 col-sm-4 col-sm-height">
-			<img src="assets/img/13.jpg" alt="">
+			<img src="resources/img/13.jpg" alt="">
 		</div>
 		<div class="col-xs-12 col-sm-4 col-sm-height bg-gray col-middle">
 			<div class="insidecolumn">
@@ -231,9 +217,9 @@
 </div>
 <!-- end: PAGE-WRAPPER -->
 <!-- PLUGIN SCRIPTS -->
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/functions.js"></script>
-<script src="assets/js/pension.js"></script>
-<script src="assets/js/countdown.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
+<script src="resources/js/functions.js"></script>
+<script src="resources/js/pension.js"></script>
+<script src="resources/js/countdown.js"></script>
 </body>
 </html>
