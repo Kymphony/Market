@@ -27,23 +27,10 @@
 <body><!-- NAVIGATION -->
 <nav>
 <!-- 로그인, 로그아웃 위치 -->
-<div class="logging">
+<div class="logging-box">
 
+<p>로그인</p>
 
-<!-- 
-
-
-
-
-작업해야할 순서의 공간 
-
-
-
-
-
-
-
--->
 </div>
 <!-- logo -->
 <div class="logo-box">
@@ -61,8 +48,8 @@
 		<ul class="dl-menu dl-menuopen">
 			<li><a href="./">홈페이지</a></li>
 			<li><a href="invite">집들이</a></li>
-			<li><a href="rooms.html">전문가</a></li>
-			<li><a href="events.html">질문과 답변</a></li>
+			<li><a href="pr">전문가</a></li>
+			<li><a href="qna">질문과 답변</a></li>
 			
 			<!-- 누르면 상세 페이지 나오게 함 -->
 			<!-- <li class="submenu"><a href="#">pages</a>
