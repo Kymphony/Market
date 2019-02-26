@@ -1,26 +1,26 @@
 package show.me.room.vo;
 
-public class ReplyVO {
-	private int num;// 댓글 글번호
+public class QnAVO {
+	private int num;// 글번호
 	private String id;// 작성자 아이디
+	private String title;// 글 제목
 	private String text;// 글 내용
 	private String originalfile;// 사용자 입장 첨부파일 명
 	private String savedfile;// 서버에 저장되는 파일 명
 	private String inputdate;// 글 작성일
-	private int rec;// 기업소개 평가
 
-	public ReplyVO() {
+	public QnAVO() {
 
 	}
 
-	public ReplyVO(int num, String id, String text, String originalfile, String savedfile, String inputdate, int rec) {
+	public QnAVO(int num, String id, String title, String text, String originalfile, String savedfile, String inputdate) {
 		this.num = num;
 		this.id = id;
+		this.title = title;
 		this.text = text;
 		this.originalfile = originalfile;
 		this.savedfile = savedfile;
 		this.inputdate = inputdate;
-		this.rec = rec;
 	}
 
 	public int getNum() {
@@ -37,6 +37,14 @@ public class ReplyVO {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public String getText() {
@@ -71,18 +79,10 @@ public class ReplyVO {
 		this.inputdate = inputdate;
 	}
 
-	public int getRec() {
-		return rec;
-	}
-
-	public void setRec(int rec) {
-		this.rec = rec;
-	}
-
 	@Override
 	public String toString() {
-		return "ReplyVO [num=" + num + ", id=" + id + ", text=" + text + ", originalfile=" + originalfile
-				+ ", savedfile=" + savedfile + ", inputdate=" + inputdate + ", rec=" + rec + "]";
+		return "QnA [num=" + num + ", id=" + id + ", title=" + title + ", text=" + text + ", originalfile="
+				+ originalfile + ", savedfile=" + savedfile + ", inputdate=" + inputdate + "]";
 	}
 
 }
