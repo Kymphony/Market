@@ -1,3 +1,23 @@
+/*==================================================================
+							    로그인
+====================================================================*/
+div .logging-box {
+	display:inline-block;
+	position:relative;
+}
+div .logging-box .logo {
+	position:relative;
+	max-height:50px;
+	padding:10px;
+	display:block;
+}
+div .logo-box .logo img {
+	height:auto;
+}
+div .logo-box .logo.logo-v2 {
+	background:#C39254;
+}
+
 /* =================================================================== */
 /* GENERAL
 /* =================================================================== */
