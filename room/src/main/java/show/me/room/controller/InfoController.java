@@ -61,12 +61,14 @@ public class InfoController {
 		return "info/login";
 	}
 
-	// 기업 로그인 폼으로 이동
+/*	일반, 기업회원 로그인은 한 페이지에서 처리
+ * 
+ * // 기업 로그인 폼으로 이동
 	@RequestMapping(value = "/blogin", method = RequestMethod.GET)
 	public String bloginForm() {
 
 		return "info/blogin";
-	}
+	}*/
 
 	// 일반인 로그인 처리
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
@@ -93,7 +95,7 @@ public class InfoController {
 
 	}
 
-	// 기업 로그인 처리
+/*	// 기업 로그인 처리
 	@RequestMapping(value = "/blogin", method = RequestMethod.POST)
 	public String blogin(HttpSession session, String bname, String bpassword, Model model) {
 		BusinessVO business = null;
@@ -114,7 +116,7 @@ public class InfoController {
 		logger.debug("아이디, 비밀번호 일치. 로그인 성공.");
 
 		return "redirect:/";
-	}
+	}*/
 
 	// 일반인 로그아웃
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
@@ -128,7 +130,7 @@ public class InfoController {
 		return "redirect:/";
 	}
 
-	// 기업 로그아웃
+/*	// 기업 로그아웃
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 	public String blogout(HttpSession session) {
 		// 세션 정보 삭제하기
@@ -137,5 +139,5 @@ public class InfoController {
 		// 세션 자체를 초기화
 		// session.invalidate();
 		return "redirect:/";
-	}
+	}*/
 }
