@@ -23,13 +23,24 @@
 <!--  Js -->
 <script src="resources/js/modernizr.custom.js"></script>
 <script src="resources/js/jquery-2.1.3.min.js"></script>
+<!-- 로그인 작은 창 뜨게 하기 -->
+<script>
+function login(){
+	window.open("login","loginWindow",
+				"top=200,left=500,width=500,height=300,menubar=no,toolbar=no,status=no,titlebar=no");//window는 바로 쓸 수 있는 메서드. 웹 브라우저를 의미함. 웹 브라우저의 객체화
+	//window.open 웹 브라우저를 하나 여는 것
+	//idCheck는 상대경로 마지막에 url주소를 덧붙이는 것. http://localhost:8888/web6/idCheck
+	//idWin은 열어 놓은 창에 이름을 붙이는 것.
+	//3번째 공란은 specs가 들어가는 위치로, 위삼스쿨을 참고한다
+}
+</script>
 </head>
 <body><!-- NAVIGATION -->
 <nav>
 <!-- 로그인, 로그아웃 위치 -->
 <div class="logging-box">
-	<a href="login" class="logo logo-img">
-	<img src="resources/img/logbutton.png" alt="logo">	
+	<a class="logo logo-img">
+	<img src="resources/img/logbutton.png" alt="logo" onclick="login()">	
 	</a>
 </div>
 <!-- logo -->
