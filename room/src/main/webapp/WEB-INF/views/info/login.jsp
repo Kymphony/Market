@@ -27,14 +27,14 @@
 div.loginbox{
 	background-color: #66e0ff;
 	width: 500px;
-	height: 250px;
+	height: 270px;
 	vertical-align: middle;
 	font-family: Typo_SsangmunDongB;
 	}
 div.below{
 	background-color: white;
 	width: 500px;
-	height: 50px;
+	height: 30px;
 	}
 	
 /*입력폼 양식 설정*/
@@ -153,7 +153,7 @@ function bmemSubmit(){
 </form>
 </div>
 <div class="below">
-
+<p>아이디가 없으신가요? <a href="join">회원가입!</a></p>
 </div>
 </body>
 </html>
