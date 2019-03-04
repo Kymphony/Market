@@ -21,61 +21,6 @@
 <script src="resources/js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-
-<!-- NAVIGATION -->
-<nav>
-<!-- logo -->
-<div class="logo-box">
-	<a href="/room" class="logo logo-img">
-	<img src="resources/img/logo.png" alt="logo">
-	</a>
-</div>
-<!-- mobile -->
-<button type="button" aria-label="Toggle Navigation" class="menu-button-mobile lines-button x2">
-<span class="lines"></span>
-</button>
-<!-- Menu -->
-<div class="menu-box my-scrollbar">
-	<div id="dl-menu" class="dl-menuwrapper">
-		<ul class="dl-menu dl-menuopen">
-			<li><a href="index.html">home</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="rooms.html">rooms</a></li>
-			<li><a href="events.html">events</a></li>
-			<li><a href="blog.html">blog</a></li>
-			<li><a href="contact.html">contact</a></li>
-			<li class="submenu"><a href="#">pages</a>
-			<ul class="sub-menu">
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="testimonials.html">Testimonials</a></li>
-				<li><a href="rooms-single.html">Room Single</a></li>
-				<li><a href="events-single.html">Event Single</a></li>
-				<li><a href="blog-single.html">Blog Single</a></li>
-				<li class="submenu "><a href="#">Interface</a>
-				<ul class="sub-menu">
-					<li><a href="elements.html">elements</a></li>
-					<li><a href="columns.html">columns</a></li>
-				</ul>
-				</li>
-			</ul>
-			</li>
-		</ul>
-	</div>
-</div>
-<!-- End Menu -->
-<footer class="footer">
-<ul class="social-icons">
-	<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-	<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-	<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-	<li><a href="#" target="_blank"><i class="fa fa-yelp"></i></a></li>
-</ul>
-<div class="copyright">
-	 &copy; 2016 <a href="index.html">Pension</a>.
-</div>
-</footer>
-</nav>
-<!-- end: NAVIGATION -->
 <!-- PAGE-WRAPPER -->
 <div class="page-wrapper">
 	<div class="col-md-6 nopadding">
@@ -184,21 +129,6 @@
 			</div>
 		</form>
 		<!-- form -->
-	</div>
-	<!-- FOOTER Section -->
-	<div class="bottomfooter">
-		<div class="col-md-4">
-			 © Template by <a href="https://www.wowthemes.net/premium-themes-templates/">WowThemes.net</a>
-		</div>
-		<div class="col-md-4">
-			<i class="fa fa-phone"></i> Book Now 202-555-0114<br/>
-			<i class="fa fa-envelope"></i> <a href="mailto:donotsendthisemail@gmail.com">hello@pension.com</a>
-		</div>
-		<div class="col-md-4">
-			<i class="fa fa-map-marker"></i>
-			940 North Georgia, Blue Ridge<br/>
-			Mountain Resorts Cabin
-		</div>
 		<div class="clearfix">
 		</div>
 	</div>

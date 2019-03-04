@@ -22,6 +22,14 @@
 <link rel="stylesheet" href="resources/css/animations.css">
 <link rel="stylesheet" href="resources/style.css">
 <script src="resources/js/modernizr.custom.js"></script>
+<script>
+function join(){
+	window.open("join","joinWindow",
+				"top=200,left=500,width=800,height=900,menubar=no,toolbar=no,status=no,titlebar=no");
+
+}
+</script>
+</sctipt>
 <style>
 /*새창 설정*/
 div.loginbox{
@@ -153,7 +161,7 @@ function bmemSubmit(){
 </form>
 </div>
 <div class="below">
-<p>아이디가 없으신가요? <a href="join">회원가입!</a></p>
+<p align="center">아이디가 없으신가요? <input type="button" value="회원가입" onclick="join()"></p>
 </div>
 </body>
 </html>

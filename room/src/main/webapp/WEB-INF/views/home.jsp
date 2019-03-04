@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="resources/style.css">
 <!--  Js -->
 <script src="resources/js/modernizr.custom.js"></script>
-<script src="resources/js/jquery-2.1.3.min.js"></script>
+<script src="resources/js/jquery-3.3.1.min.js"></script>
 <!-- 로그인 작은 창 뜨게 하기 -->
 <script>
 function login(){
